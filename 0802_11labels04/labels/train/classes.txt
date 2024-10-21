@@ -1,0 +1,11 @@
+red
+green
+yellow
+other
+person
+car
+hdv
+cycle
+red left
+green left
+yellow left
