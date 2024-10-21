@@ -1,5 +1,6 @@
 # yolov8-autolabelimg
 此工程沿用labelImg，只在autolabelimg中将yolov5修改为yolov8
+原文件为labelImg.py -- 修改为labelImg_yolov8.py
 若欲查看其他工具使用步骤，查看原工程：https://github.com/wufan-tb/AutoLabelImg
 
 1. clone this repo：
@@ -32,10 +33,10 @@
    pyrcc5 -o libs/resources.py resources.qrc
    ```
    
-4. prepare yolov5 weights file and move them to here: [official model zoo:[Yolov5](https://github.com/ultralytics/yolov5)]
+4. prepare yolov8 weights file and move them to here
 
    ```bash
-   mv {your_model_weight.pt} pytorch_yolov5/weights/
+   mv {your_model_weight.pt} pytorch_yolov8/ultralytics/weights/
    ```
 
 5. open labelimg software
@@ -53,7 +54,7 @@ create a file:labelImg.bat, open it and type these text(D disk as an example)：
 ```bash
 D:
 cd D:{path to your labelImg folder}
-start python labelImg.py
+start python labelImg_yolov8.py
 exit
 ```
 
@@ -81,12 +82,3 @@ source ~/.bashrc
 
 typing 'labeling' in terminal to open the software.
 
-## Citation
-
-```
-{   AutoLabelImg,
-    author = {Wu Fan},
-    year = {2020},
-    url = {\url{https://https://github.com/wufan-tb/AutoLabelImg}}
-}
-```
