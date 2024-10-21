@@ -1,0 +1,2 @@
+# yolov8-autolabelimg
+此工程沿用labelImg，只在autolabelimg中将yolov5改为yolov8
